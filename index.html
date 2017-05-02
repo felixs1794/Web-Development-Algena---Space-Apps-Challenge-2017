@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>	Artificial Gene Analyzer</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<style>
+      #map {
+        height: 250px;
+        width: 100%;
+		 border: 1px solid #ddd;
+       }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper" >
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-square-o "></i>&nbsp;ALGENA</a>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li class="text-center user-image-back">
+                        <img src="assets/img/latam.jpeg" class="img-responsive" />
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop "></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="DistributionMaps.html"><i class="fa fa-table "></i>Distribution Maps</a>
+                    </li>
+                    <li>
+                        <a href="EvolutionGene.html"><i class="fa fa-edit "></i>Evolution Genes </a>
+                    </li>
+
+                    <li>
+                        <a href="Species.php"><i class="fa fa-sitemap "></i>Species</a>
+                    </li>
+                    <li>
+                        <a href="PanamaNature.html"><i class="fa fa-qrcode "></i>Panama Nature </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i>Mettis Charts</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                       <center> <h2>Information on Animals in Danger of Extinction </h2> </center>
+						<div class="col-md-12">
+
+                        <div class="panel panel-primary">
+
+
+                            <div class="panel-heading">
+
+                            </div>
+                            <div class="panel-body">
+
+                             <center> <img src="" class="img-responsive" border="0" name="Imagen"> </center>
+
+							<script>
+							var _img = new Array();
+								_img[0] = new Image(); _img[0].src="assets/img/Treerunner.png";
+								_img[1] = new Image(); _img[1].src="assets/img/robber_frog.png";
+								_img[2] = new Image(); _img[2].src="assets/img/Brown backed dove.png";
+								_img[3] = new Image(); _img[3].src="assets/img/Central american mud turtle.png";
+								_img[4] = new Image(); _img[4].src="assets/img/Continental divide treefrog.png";
+								_img[5] = new Image(); _img[5].src="assets/img/Craugastor tabasarae.png";
+								_img[6] = new Image(); _img[6].src="assets/img/Darien stubfoot toad.png";
+								_img[7] = new Image(); _img[7].src="assets/img/Geoffroy's spider monkey.png";
+								_img[8] = new Image(); _img[8].src="assets/img/Glow-throated.png";
+								_img[9] = new Image(); _img[9].src="assets/img/Isthmohyla calypsa.png";
+								_img[10] = new Image(); _img[10].src="assets/img/Panamanian Golden.png";
+								_img[11] = new Image(); _img[11].src="assets/img/Sylvilagus Dicei.png";
+								_img[12] = new Image(); _img[12].src="assets/img/Yellow-green finch.png";
+
+							function cambiarA(_obj)
+							{
+							  if(!_obj)return;
+							  var _index = _obj.selectedIndex;
+							  if(!_index)return;
+							  var _item  = _obj[_index].value;
+							  if(!_item)return;
+							  if(_item<0 || _item >=_img.length)return;
+							  document.images["Imagen"].src=_img[_item].src;
+							}
+							</script>
+							 <form method="get">
+							  <br></br>
+							 					  
+							<center> <select onchange="cambiarA(this)">
+							  <option value="">Know where they live</option>
+							  <option value="0">Treerunner</option>
+							  <option value="1">Robber Frog</option>
+							  <option value="2">Brown Backed Dove</option>
+							  <option value="3">Central American Mud Turtle</option>
+							  <option value="4">Continental Divide Treefrog</option>
+							  <option value="5">Craugastor Tabasarae<option>
+							  <option value="6">Darien Stubfoot Toad</option>
+							  <option value="7">Geoffroy's Spider Monkey</option>
+							  <option value="8">Glow-Throated</option>
+							  <option value="9">Isthmohyla Calypsa</option>
+							  <option value="10">Panamanian Golden</option>
+							  <option value="11">Sylvilagus Dicei</option>
+							  <option value="12">Yellow-green finch</option>
+
+							</select>
+							</center>
+							</form>
+
+                            </div>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+				 <div class="row">
+                    <div class="col-md-12">
+
+
+					<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_H16ejVSLVhgO5hgrwclYjLGI6gD7xj8&callback=initMap">
+					</script>
+                    </div>
+
+
+
+                </div>
+                <!-- /. ROW  -->
+                <hr />
+
+                <hr />
+                <div class="row">
+				<div class="col-md-12">
+                 <h5>Birds, monkeys and endangered species</h5>
+                    <div class="col-md-3">
+					<img src="assets/img/tucaniris.jpg" class="imgRedonda" />
+                    </div>
+					<div class="col-md-3">
+						   <img src="assets/img/titi.jpg" class="imgRedonda" />
+                    </div>
+					<div class="col-md-3">
+						   <img src="assets/img/ocelote.png" class="imgRedonda" />
+                    </div>
+					<div class="col-md-3">
+						   <img src="assets/img/iguana.jpg" class="imgRedonda" />
+                    </div>
+                </div>
+				</div>
+                <hr /> <hr />
+				<div class="row">
+                    <div class="col-md-4">
+                        <h5>Experience</h5>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+
+                            </div>
+                            <div class="panel-body">
+                                <p>Every observation can contribute to biodiversity science, from the rarest butterfly to the most common backyard weed. We share your findings with scientific data repositories like the Global Biodiversity
+									Information Facility to help scientists find and use your data. All you have to do is observe.</p>
+                                </div>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h5>Evolution</h5>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">Sexual</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                       Animals live in certain habitats that provide them with food, water, shelter and a partner to survive and reproduce.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Mutations</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
+                                    <div class="panel-body">
+                                        The adaptations of animals allow them to survive in a certain environment and multiply as they are the result of evolution.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">Live</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+
+
+                                        <div class="panel-body">
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- /. ROW  -->
+                <hr />
+                  <div class="row">
+                    <div class="col-md-12">
+                        <h5>Information</h5>
+                            <a>Irresponsible human development destroys the planet and directly affects the
+							fauna and flora of virgin areas of seva, the endemic species of a region migrate seeking shelter
+							and an area that is prractical for long-term adaptation.</a>.
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+				<hr /><hr />
+				</div>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+                </div>
+                <!-- /. ROW  -->
+                <hr />
+
+    <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+</html>
